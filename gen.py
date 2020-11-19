@@ -78,6 +78,7 @@ content = [
         "content": "Describes the rust ecosystem for creating command line apps",
         "link": "https://rust-cli.github.io/book/index.html",
         "linkname": "Read the cli book",
+        "img": "./cli.svg",
     },
     {
         "header": "FFI Omnibus",
@@ -96,6 +97,7 @@ content = [
         "content": "mdBook is a command line tool to create books using Markdown files. Most of these books were made with it.",
         "link": "https://rust-lang.github.io/mdBook/",
         "linkname": "Read the mdBook documentation",
+        "img": "./mdbook.svg"
     },
     {
         "header": "The Rust Forge",
