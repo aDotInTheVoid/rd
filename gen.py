@@ -10,7 +10,7 @@
 
 
 def make_img(link):
-    return f"""<img class="h-8 w-8 md:h-10 md:w-10 md:-my-1" src="{link}"/>"""
+    return f"""<img class="h-32 w-32 md:h-22 md:w-22 md:-my-1" src="{link}"/>"""
 
 
 content = [
