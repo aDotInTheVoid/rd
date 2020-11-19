@@ -8,8 +8,10 @@
 #   </g>
 # </svg>
 
+
 def make_img(link):
     return f"""<img class="h-8 w-8 md:h-10 md:w-10 md:-my-1" src="{link}"/>"""
+
 
 content = [
     {
@@ -17,7 +19,7 @@ content = [
         "content": "Bringing a great IDE experience to the Rust programming language.",
         "link": "https://rust-analyzer.github.io/manual.html",
         "linkname": "Read the Rust Analyzer manual",
-        "svg": """<img class="h-8 w-8 md:h-10 md:w-10 md:-my-1" src="./ra.svg"/>"""
+        "img": "./ra.svg",
     },
     {
         "header": "Learn Rust With Entirely Too Many Linked Lists",
@@ -48,7 +50,7 @@ content = [
         "content": "This book contains many techniques that can improve the performance—speed and memory usage—of Rust programs.",
         "link": "https://nnethercote.github.io/perf-book/introduction.html",
         "linkname": "Read the performance book",
-        "svg": """<img class="h-8 w-8 md:h-10 md:w-10 md:-my-1" src="./speedometer.svg"/>"""
+        "img": "./speedometer.svg",
     },
     {
         "header": "The async book",
