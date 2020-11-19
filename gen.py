@@ -1,5 +1,15 @@
 # TODO: Pritty SVG's
 # TODO: Some sort of order
+# SVG's should be likg
+# <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-8 w-8 md:h-10 md:w-10 md:-my-1">
+#   <g>
+#     <path class="fill-current text-gray-400" d="M12 21a2 2 0 0 1-1.41-.59l-.83-.82A2 2 0 0 0 8.34 19H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h4a5 5 0 0 1 4 2v16z" />
+#     <path class="fill-current text-gray-700" d="M12 21V5a5 5 0 0 1 4-2h4a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1h-4.34a2 2 0 0 0-1.42.59l-.83.82A2 2 0 0 1 12 21z" />
+#   </g>
+# </svg>
+
+def make_img(link):
+    return f"""<img class="h-8 w-8 md:h-10 md:w-10 md:-my-1" src="{link}"/>"""
 
 content = [
     {
@@ -7,6 +17,7 @@ content = [
         "content": "Bringing a great IDE experience to the Rust programming language.",
         "link": "https://rust-analyzer.github.io/manual.html",
         "linkname": "Read the Rust Analyzer manual",
+        "svg": """<img class="h-8 w-8 md:h-10 md:w-10 md:-my-1" src="./ra.svg"/>"""
     },
     {
         "header": "Learn Rust With Entirely Too Many Linked Lists",
@@ -37,6 +48,7 @@ content = [
         "content": "This book contains many techniques that can improve the performance—speed and memory usage—of Rust programs.",
         "link": "https://nnethercote.github.io/perf-book/introduction.html",
         "linkname": "Read the performance book",
+        "svg": """<img class="h-8 w-8 md:h-10 md:w-10 md:-my-1" src="./speedometer.svg"/>"""
     },
     {
         "header": "The async book",
@@ -285,6 +297,9 @@ for idx, c in enumerate(content):
         t = p3
     for i in c:
         t = t.replace(f"<!-- SLOT {i} -->", c[i])
+    img = c.get("img")
+    if img is not None:
+        t = t.replace(f"<!-- SLOT svg -->", make_img(img))
 
     print(t)
 
