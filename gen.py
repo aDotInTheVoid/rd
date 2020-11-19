@@ -1,25 +1,115 @@
 # TODO: Pritty SVG's
-
-# https://rust-unofficial.github.io/too-many-lists/
-# https://danielkeep.github.io/tlborm/book/index.html
-# https://os.phil-opp.com/
-# https://nnethercote.github.io/perf-book/introduction.html
-# https://rust-lang.github.io/async-book/
-# https://github.com/rust-lang/rust/tree/master/src/doc
-# https://docs.rust-embedded.org/
-# https://rustwasm.github.io/docs.html
-# https://rust-cli.github.io/book/index.html
-# https://doc.rust-lang.org/stable/
-# http://jakegoulding.com/rust-ffi-omnibus/
-# https://rust-lang.github.io/rust-bindgen/
-# https://rust-lang.github.io/mdBook/
-# https://forge.rust-lang.org/
-# https://rust-lang.github.io/rust-clippy/
-# https://this-week-in-rust.org/
-# https://timetill.rs/#/
-# https://rust-lang.github.io/rustup-components-history/
+# TODO: Some sort of order
 
 content = [
+    {
+        "header": "Rust Analyzer",
+        "content": "Bringing a great IDE experience to the Rust programming language.",
+        "link": "https://rust-analyzer.github.io/manual.html",
+        "linkname": "Read the Rust Analyzer manual",
+    },
+    {
+        "header": "Learn Rust With Entirely Too Many Linked Lists",
+        "content": "While linked lists arn't a great data strutcture, implemeenting them can teach us a lot about rust",
+        "link": "https://rust-unofficial.github.io/too-many-lists/",
+        "linkname": "Write a bajillion linked lists.",
+    },
+    {
+        "header": "Proc macro workshop",
+        "content": "Contains a selection of projects designed to learn to write Rust procedural macros — Rust code that generates Rust code.",
+        "link": "https://github.com/dtolnay/proc-macro-workshop",
+        "linkname": "Learn about proc macros",
+    },
+    {
+        "header": "The Little Book of Rust Macros",
+        "content": "Documentation on writing macros by example",
+        "link": "https://danielkeep.github.io/tlborm/book/index.html",
+        "linkname": "Read about macros",
+    },
+    {
+        "header": "Writing an OS in Rust",
+        "content": "This blog series creates a small operating system in rust.",
+        "link": "https://os.phil-opp.com/",
+        "linkname": "Read the os blog",
+    },
+    {
+        "header": "The Rust Performance Book.",
+        "content": "This book contains many techniques that can improve the performance—speed and memory usage—of Rust programs.",
+        "link": "https://nnethercote.github.io/perf-book/introduction.html",
+        "linkname": "Read the performance book",
+    },
+    {
+        "header": "The async book",
+        "content": "Documentation on learning asyncronus rust, which allows other parts of the progamm to keep running while one is blocked on something like IO.",
+        "link": "https://rust-lang.github.io/async-book/",
+        "linkname": "Read the async book",
+    },
+    {
+        "header": "Embedded Rust documentation",
+        "content": "All the documentation provided by the Rust and WebAssembly Working Group.",
+        "link": "https://docs.rust-embedded.org/",
+        "linkname": "Learn about embedded rust",
+    },
+    {
+        "header": "Rust Webassembly documentations",
+        "content": "All the documentation provided by the WebAssembly Working Group.",
+        "link": "https://rustwasm.github.io/docs.html",
+        "linkname": "Learn about rust and webassembly",
+    },
+    {
+        "header": "The rust cli book",
+        "content": "Describes the rust ecosystem for creating command line apps",
+        "link": "https://rust-cli.github.io/book/index.html",
+        "linkname": "Read the cli book",
+    },
+    {
+        "header": "FFI Omnibus",
+        "content": "A collection of examples of using code written in Rust from other languages.",
+        "link": "http://jakegoulding.com/rust-ffi-omnibus/",
+        "linkname": "Read the ffi omnibus",
+    },
+    {
+        "header": "bindgen",
+        "content": "bindgen automatically generates Rust FFI bindings to C and C++ libraries.",
+        "link": "https://rust-lang.github.io/rust-bindgen/",
+        "linkname": "Read the bindgen docs",
+    },
+    {
+        "header": "mdBook",
+        "content": "mdBook is a command line tool to create books using Markdown files. Most of these books were made with it.",
+        "link": "https://rust-lang.github.io/mdBook/",
+        "linkname": "Read the mdBook documentation",
+    },
+    {
+        "header": "The Rust Forge",
+        "content": "The Rust Forge serves as a repository of miscelanius supplementary documentation useful for Rust contributors",
+        "link": "https://forge.rust-lang.org/",
+        "linkname": "Visit the forge",
+    },
+    {
+        "header": "Clippy documentation",
+        "content": "A bunch of lints to catch common mistakes and improve your Rust code.",
+        "link": "https://rust-lang.github.io/rust-clippy/stable/",
+        "linkname": "See the clippy links",
+    },
+    {
+        "header": "This week in rust",
+        "content": "Stay up to date with events, learning resources, and recent developments in Rust community.",
+        "link": "https://this-week-in-rust.org/",
+        "linkname": "See whats new this week",
+    },
+    {
+        "header": "timetill.rs",
+        "content": " A website for upcoming Rust conferences.",
+        "link": "https://timetill.rs/",
+        "linkname": "See upcoming events",
+    },
+    {
+        "header": "Rustup components availability",
+        "content": "Monitors rustup components availability history on different platforms.",
+        "link": "https://rust-lang.github.io/rustup-components-history/",
+        "linkname": "See the component history",
+    },
     {
         "header": "The Rust Fuzzing Book",
         "content": "Describes how to fuzz code written in rust",
@@ -177,7 +267,6 @@ content = [
         "linkname": "See whats coming",
     },
 ]
-
 
 with open("./index.html", "r") as f:
     tpl = f.read()
