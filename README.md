@@ -1,4 +1,4 @@
-# Tailwind CSS Playground
+# Rust bookshelf
 
 A simple starter project for playing around with Tailwind in a proper PostCSS environment.
 
@@ -15,14 +15,15 @@ To get started:
 2. Install the dependencies:
 
    ```bash
-   # Using npm
-   npm install
-
-   # Using Yarn
    yarn
    ```
+3. Run the amAZiNg sTAtic sIte gENErATOR
 
-3. Start the development server:
+   ```bash
+   python3 gen.py > public/index.html
+   ```
+
+5. Start the development server:
 
    ```bash
    # Using npm
@@ -33,12 +34,6 @@ To get started:
    ```
 
    Now you should be able to see the project running at localhost:8080.
-
-4. Open `public/index.html` in your editor and start experimenting!
-
-## Play with it on CodeSandbox
-
-A CodeSandbox version of this playground [is one click away](https://codesandbox.io/s/github/tailwindcss/playground/tree/master)!
 
 ## Building for production
 
