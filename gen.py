@@ -26,6 +26,7 @@ content = [
         "content": "While linked lists arn't a great data strutcture, implemeenting them can teach us a lot about rust",
         "link": "https://rust-unofficial.github.io/too-many-lists/",
         "linkname": "Write a bajillion linked lists.",
+        "img": "./link.svg"
     },
     {
         "header": "Proc macro workshop",
@@ -63,12 +64,14 @@ content = [
         "content": "All the documentation provided by the Rust and WebAssembly Working Group.",
         "link": "https://docs.rust-embedded.org/",
         "linkname": "Learn about embedded rust",
+        "img": "./embedded.svg"
     },
     {
         "header": "Rust Webassembly documentations",
         "content": "All the documentation provided by the WebAssembly Working Group.",
         "link": "https://rustwasm.github.io/docs.html",
         "linkname": "Learn about rust and webassembly",
+        "img": "./wasm-ferris.png"
     },
     {
         "header": "The rust cli book",
@@ -177,12 +180,14 @@ content = [
         "content": "It describes each language construct and their use, memory model, concurrency model, runtime services, linkage model, and debugging facilities",
         "link": "https://doc.rust-lang.org/reference/",
         "linkname": "Read the reference",
+        "img": "./reference.svg"
     },
     {
         "header": "The Rustonomicon",
         "content": """THE KNOWLEDGE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF UNLEASHING INDESCRIBABLE HORRORS THAT SHATTER YOUR PSYCHE AND SET YOUR MIND ADRIFT IN THE UNKNOWABLY INFINITE COSMOS.""",
         "link": "https://doc.rust-lang.org/nomicon/",
         "linkname": "Dig into all the awful details",
+        "img": "./nomicon.svg"
     },
     {
         "header": "Edition Guide",
@@ -249,6 +254,7 @@ content = [
         "content": "This book has documentation of the nighly features that haven't been stabilized yet",
         "link": "https://doc.rust-lang.org/unstable-book/",
         "linkname": "Read the Unstable book",
+        "img": "./unstable.svg"
     },
     {
         "header": "Rustfmt",
